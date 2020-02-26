@@ -21,7 +21,7 @@ public class LimitedFireatPlayer : MonoBehaviour
     void Update()
     {
         GameObject move = GameObject.Find("boss1");
-        isStoped = move.GetComponent<bossMove>().stoped;
+       // isStoped = move.GetComponent<bossMove>().stoped;
         if (start == 1)
         {
             Invoke("startlaunch", 0);
