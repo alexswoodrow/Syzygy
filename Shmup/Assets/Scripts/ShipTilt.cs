@@ -20,7 +20,7 @@ public class ShipTilt : MonoBehaviour {
 	void Start () {
         shipRB = GetComponent<Rigidbody>();
         currZ = shipRB.transform.rotation.z;
-        tiltSpeed = 20f;
+        tiltSpeed = 50f;
     }
 	
 	// Update is called once per frame
@@ -48,7 +48,7 @@ public class ShipTilt : MonoBehaviour {
         } 
         else RegressZ();
 
-        Debug.Log(currZ);
+        //Debug.Log(currZ);
 
 	}
 

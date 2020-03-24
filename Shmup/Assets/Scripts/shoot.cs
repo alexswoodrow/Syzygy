@@ -8,15 +8,22 @@ public class shoot : MonoBehaviour {
     public float speed = 5.0f;
     public float thespawn = 2f;
     public float bulletspawn = 1f;
+    bool IsShoot = false;
 
-	// Use this for initialization
-	void Start () {
-     
+    PlayCon controls;
+
+    // Use this for initialization
+    void Awake()
+    {
+        controls = new PlayCon();
+
+        controls.Shoot.Shoot.performed += ctx => Bang();
+        controls.Shoot.Shoot.canceled += ctx => Click();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKey(KeyCode.Space) && bulletspawn == 1f)
+
+        // Update is called once per frame
+        void Update () {
+        if (IsShoot == true && bulletspawn == 1f)
         {
           
             Invoke("launchOrb", thespawn);
@@ -33,12 +40,30 @@ public class shoot : MonoBehaviour {
     void launchOrb ()
     {
         Vector2 target = new Vector2(10,transform.position.y);
-        Vector2 pos = new Vector2(transform.position.x + 1.5f, transform.position.y);
+        Vector2 pos = new Vector2(transform.position.x + 1f, transform.position.y);
         Vector2 direction = target - pos;
         direction.Normalize();
         GameObject Projectile = (GameObject)Instantiate(bullet, pos, Quaternion.identity);
         Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
         bulletspawn++;
+    }
+    private void OnEnable()
+    {
+        controls.Shoot.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Shoot.Disable();
+    }
+    void Bang()
+    {
+        IsShoot = true;
+        Debug.Log("bang");
+    }
+    void Click()
+    {
+        IsShoot = false;
     }
 
 }

@@ -7,28 +7,43 @@ public class Pausemenu : MonoBehaviour
 {
     public static bool pause = false;
     public GameObject pausemenuUI;
-
+    PlayCon controls;
+    bool paused = false;
+    public int forpause = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        controls = new PlayCon();
         pausemenuUI.SetActive(false);
+        controls.PlayerControls.Pause.started += ctx => tf();
+
+    }
+
+    private void OnEnable()
+    {
+        controls.PlayerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.PlayerControls.Disable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (forpause == 2)
         {
-            if (pause == true)
-            {
-                Resume();
-            } else
-            {
-                Pause();
-            }
+            Resume();
+            forpause = 0;
+        }
+        if (forpause == 1)
+        {
+            Pause();
+            forpause = 3;
         }
     }
-    public void Resume ()
+    public void Resume()
     {
         pausemenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -45,10 +60,21 @@ public class Pausemenu : MonoBehaviour
         Application.Quit();
         Debug.Log("are you sure?");
     }
-   public void menu()
+    public void menu()
     {
         SceneManager.LoadScene("Main Menu");
     }
-
+    public void tf()
+    {
+        if (forpause == 0)
+        {
+            forpause = 1;
+        }
+        if (forpause == 3)
+        {
+            forpause = 2;
+        }
+    }
 }
+    
 
