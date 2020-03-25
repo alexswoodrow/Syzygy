@@ -18,7 +18,7 @@ public class Boundry : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "goodBullet")
+        if (other.gameObject.tag == "goodBullet" || other.gameObject.tag == "betterbullet")
         {
             Destroy(other.gameObject);
         }

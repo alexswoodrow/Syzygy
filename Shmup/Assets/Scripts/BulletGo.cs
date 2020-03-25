@@ -28,7 +28,7 @@ public class BulletGo : MonoBehaviour
         if (gameObject.transform.tag == "betterbullet")
         {
             SpriteRenderer therenderer = GetComponent<SpriteRenderer>();
-            therenderer.color = new Color(0, 0, 1, 0);
+            therenderer.color = new Color(0, 0, 1, 1);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
