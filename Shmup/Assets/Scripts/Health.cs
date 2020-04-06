@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         {
             GameObject player = GameObject.Find("player");
             Destroy(gameObject);
-            player.GetComponent<Score>().score += plusScore;
+           Score.score += plusScore;
         }
     }
     private void OnCollisionEnter2D(Collision2D other)

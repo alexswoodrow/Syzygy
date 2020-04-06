@@ -29,6 +29,10 @@ public class kill : MonoBehaviour
             Instantiate(playership,startingpos,Quaternion.identity);
             lives.lifenum--;
         }
+        if (other.gameObject.tag == "betterBullet")
+        {
+            Destroy(gameObject);
+        }
     }
     
 }

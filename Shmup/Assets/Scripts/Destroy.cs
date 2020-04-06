@@ -25,7 +25,7 @@ public class Destroy : MonoBehaviour
             if (other.gameObject.tag == "astroid")
             {
                 GameObject player = GameObject.Find("player");
-                player.GetComponent<Score>().score += plusScore;
+                Score.score += plusScore;
 
                 Destroy(other.gameObject);
                 Destroy(gameObject);
