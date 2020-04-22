@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     public float health = 0f;
     public int plusScore = 10;
+    public EnemyDestroySound other;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,10 @@ public class Health : MonoBehaviour
       
         if (health <= 0f)
         {
-            GameObject player = GameObject.Find("player");
-            Destroy(gameObject);
+          
+           GameObject player = GameObject.Find("player");
+           Destroy(gameObject);
+           other.boomSound();
            Score.score += plusScore;
         }
     }

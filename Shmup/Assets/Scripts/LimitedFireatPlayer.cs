@@ -10,6 +10,7 @@ public class LimitedFireatPlayer : MonoBehaviour
     public bool isStoped;
     float start = 1f;
     public float shots = 2f;
+    public AudioClip badshoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +29,12 @@ public class LimitedFireatPlayer : MonoBehaviour
             start--;
 
         }
-        GameObject player = GameObject.Find("player");
+        GameObject player = GameObject.Find("player(Clone)");
         playerpos = player.GetComponent<Transform>().position;
     }
     void launch1()
     {
+        AudioSource audio = GetComponent<AudioSource>();
         if (shots >= 0) {
             Vector2 target = new Vector2(playerpos.x, playerpos.y);
             Vector2 pos = new Vector2(transform.position.x - .1f, transform.position.y);
@@ -41,6 +43,7 @@ public class LimitedFireatPlayer : MonoBehaviour
             GameObject Projectile = (GameObject)Instantiate(bullet, pos, Quaternion.identity);
             Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
             Invoke("startlaunch", 0);
+            audio.Play();
         }
     }
 

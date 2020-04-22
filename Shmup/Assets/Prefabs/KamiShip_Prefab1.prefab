@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1335434477529498740}
   - component: {fileID: 2577340242517161663}
   - component: {fileID: 7772813502008150265}
+  - component: {fileID: 3100309898873047860}
+  - component: {fileID: 7079381542187351779}
   m_Layer: 0
   m_Name: KamiShip_Prefab1
   m_TagString: Untagged
@@ -79,3 +81,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!122 &3100309898873047860
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676302084480406711}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 520099028
+  m_Size: 0.6
+--- !u!95 &7079381542187351779
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676302084480406711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a57ab9fdf76add74eb9b688027e40f5a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -33,17 +33,13 @@ public class BulletGo : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Player" && other.gameObject.tag != "friend")
-        {
-            Destroy(gameObject);
-            Debug.Log("hit");
-
-        }
+        
         if (other.gameObject.tag == "friend")
         {
             gameObject.tag = "betterbullet";
-            Debug.Log("finally");
+         
         }
+       
     }
 }
   

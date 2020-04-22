@@ -11,6 +11,7 @@ public class shoot : MonoBehaviour {
     bool IsShoot = false;
 
     PlayCon controls;
+    public AudioClip shootSound;
 
     // Use this for initialization
     void Awake()
@@ -39,6 +40,8 @@ public class shoot : MonoBehaviour {
     }
     void launchOrb ()
     {
+        AudioSource audio = GetComponent<AudioSource>();
+        
         Vector2 target = new Vector2(10,transform.position.y);
         Vector2 pos = new Vector2(transform.position.x + 1f, transform.position.y);
         Vector2 direction = target - pos;
@@ -46,6 +49,7 @@ public class shoot : MonoBehaviour {
         GameObject Projectile = (GameObject)Instantiate(bullet, pos, Quaternion.identity);
         Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
         bulletspawn++;
+        AudioSource.PlayClipAtPoint(shootSound, transform.position);
     }
     private void OnEnable()
     {

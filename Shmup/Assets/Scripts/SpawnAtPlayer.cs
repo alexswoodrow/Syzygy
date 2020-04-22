@@ -36,7 +36,7 @@ void Start()
 void Update()
 {
 
-    GameObject player = GameObject.Find("player1");
+    GameObject player = GameObject.Find("player");
     if (spawnNumber == 5f)
     {
 
@@ -97,15 +97,29 @@ void Update()
 }
 void launcher()
 {
-    GameObject player = GameObject.Find("player");
-    Vector3 playerpos = player.GetComponent<Transform>().position;
-    Vector2 target = new Vector2(playerpos.x, playerpos.y);
-    Vector2 pos = new Vector2(transform.position.x, spawny);
-    Vector2 direction = target - pos;
-    direction.Normalize();
-    GameObject Projectile = (GameObject)Instantiate(enemy, pos, Quaternion.identity);
-    Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
-
+        if (lives.lifenum == 4)
+        {
+            GameObject player = GameObject.Find("player");
+            Vector3 playerpos = player.GetComponent<Transform>().position;
+            Vector2 target = new Vector2(playerpos.x, playerpos.y);
+            Vector2 pos = new Vector2(transform.position.x, spawny);
+            Vector2 direction = target - pos;
+            direction.Normalize();
+            GameObject Projectile = (GameObject)Instantiate(enemy, pos, Quaternion.identity);
+            Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
+        }
+  
+        if (lives.lifenum <= 3)
+        {
+            GameObject player = GameObject.Find("player(Clone)");
+            Vector3 playerpos = player.GetComponent<Transform>().position;
+            Vector2 target = new Vector2(playerpos.x, playerpos.y);
+            Vector2 pos = new Vector2(transform.position.x, spawny);
+            Vector2 direction = target - pos;
+            direction.Normalize();
+            GameObject Projectile = (GameObject)Instantiate(enemy, pos, Quaternion.identity);
+            Projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
+        }
     }
 }
 

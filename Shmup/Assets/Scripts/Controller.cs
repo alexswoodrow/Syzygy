@@ -9,6 +9,7 @@ public class Controller: MonoBehaviour
     public float yspeed = 7f;
     protected Vector2 velocity;
     Vector2 move = Vector2.zero;
+   
     // Start is called before the first frame update
     PlayCon inputActions;
 

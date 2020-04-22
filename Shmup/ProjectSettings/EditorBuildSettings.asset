@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 103a71ac72a9ba1409fef556d322523f
   - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 2894b66c38e43514490febba7b6413fd
+  - enabled: 1
     path: Assets/Scenes/PickAbility1.unity
     guid: ed8540b0da5d9f74592084a1b1697991
   - enabled: 1
@@ -25,10 +28,7 @@ EditorBuildSettings:
     guid: 73df597abcfc53e42b63aaf3cd8b8593
   - enabled: 1
     path: Assets/Scenes/Level4.unity
-    guid: c2c8a9beb3174d84cb5e63689c1c7327
-  - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: 7f747240d850b894f9160e1f77b5f7ae
+    guid: 5f15f0a01e2a8c043b94401f57563458
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: 08c692a9321ada942bf8bad1da0e7f08
@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 1613f889f53497749b36bebabd337f3c
+  - enabled: 0
+    path: Assets/Scenes/Level7.unity
+    guid: c2c8a9beb3174d84cb5e63689c1c7327
+  - enabled: 0
+    path: Assets/Scenes/Level8.unity
+    guid: 7f747240d850b894f9160e1f77b5f7ae
   m_configObjects: {}

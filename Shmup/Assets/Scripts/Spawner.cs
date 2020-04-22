@@ -97,7 +97,7 @@ public class Spawner : MonoBehaviour
     }
     void launcher()
     {
-        GameObject player = GameObject.Find("player");
+        GameObject player = GameObject.Find("player(Clone)");
         Vector3 playerpos = player.GetComponent<Transform>().position;
      
         Vector2 pos = new Vector2(transform.position.x, spawny);

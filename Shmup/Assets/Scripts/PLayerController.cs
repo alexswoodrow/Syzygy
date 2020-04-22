@@ -11,7 +11,7 @@ public class PLayerController : MonoBehaviour
     Vector2 move;
     public float speed;
     bool boost = false;
-
+   
     void Awake()
     {
         speed = 7f;

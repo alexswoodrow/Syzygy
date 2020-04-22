@@ -32,10 +32,16 @@ public class Destroy : MonoBehaviour
             }
 
             if (other.gameObject.tag == "bullet")
-            {
+           {
                 Destroy(gameObject);
 
             }
+            if (gameObject.tag == "betterbullet" && other.gameObject.tag == "bullet")
+            {
+                Destroy(gameObject);
+                Destroy(other.gameObject);
+            }
+
         }
     }
 }

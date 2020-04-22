@@ -15,7 +15,7 @@ public class RotatingAroundPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.RotateAround(player.transform.position, new Vector3(0, 0, 1), 100 * Time.deltaTime);
+        transform.RotateAround(player.transform.position, new Vector3(0, 0, 2), 150 * Time.deltaTime);
     }
 
 }

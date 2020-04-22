@@ -20,9 +20,9 @@ public class CleanUp : MonoBehaviour
     void Update()
     {
         Vector3 mypos = transform.position;
-        GameObject player = GameObject.Find("player");
+        GameObject player = GameObject.Find("wall");
         thepos = player.GetComponent<Transform>().position.x;
-        mypos.x = thepos - 24f;
+        mypos.x = thepos - 8f;
         mypos.y = ypos;
         transform.position = mypos; //charger games helped me figure out how to fix my position with his youtube tutorials
        
