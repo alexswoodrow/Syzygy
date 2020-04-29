@@ -12,7 +12,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        Application.LoadLevel(playGameLevel);
+        SceneManager.LoadScene("Level1");
+        lives.lifenum = 3;
     }
 
     public void QuitGame()
@@ -22,11 +23,11 @@ public class MainMenu : MonoBehaviour
 
     public void LevelSelect ()
     {
-        SceneManager.LoadScene("Instructions");
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void ControlScreen() {
-        //Application.LoadLevel(); //Unity is telling me this is an "obselete way to load scene" ?
+        SceneManager.LoadScene("Instructions");
     }
 
 }

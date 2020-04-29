@@ -26,8 +26,8 @@ public class kill : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject);
-            Instantiate(playership,startingpos,Quaternion.identity);
             lives.lifenum--;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (other.gameObject.tag == "betterBullet")
         {

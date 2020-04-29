@@ -142,6 +142,7 @@ MonoBehaviour:
   speed: 10
   thespawn: 0.2
   bulletspawn: 1
+  shootSound: {fileID: 0}
 --- !u!114 &5724987069206684505
 MonoBehaviour:
   m_ObjectHideFlags: 0

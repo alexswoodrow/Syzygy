@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 30
   plusScore: 10
-  other: {fileID: 0}
+  other: {fileID: 2641693996902941036, guid: 8cd7f1ff830ae0549ace4ff25628e909, type: 3}
 --- !u!114 &1615183950715913269
 MonoBehaviour:
   m_ObjectHideFlags: 0

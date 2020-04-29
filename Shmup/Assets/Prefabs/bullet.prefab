@@ -49,6 +49,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -130,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plusScore: 10
+  explo: {fileID: 6746718690498758100, guid: c8f26b5689d1e2d45b592fda9c987be0, type: 3}
 --- !u!60 &5084516347254922022
 PolygonCollider2D:
   m_ObjectHideFlags: 0

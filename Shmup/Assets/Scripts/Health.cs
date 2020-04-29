@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         if (health <= 0f)
         {
           
-           GameObject player = GameObject.Find("player");
+           GameObject player = GameObject.Find("player(Clone)");
            Destroy(gameObject);
            other.boomSound();
            Score.score += plusScore;

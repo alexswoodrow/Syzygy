@@ -27,7 +27,7 @@ public class fireAtPlayer : MonoBehaviour
             start--;
 
         }
-        GameObject player = GameObject.Find("player");
+        GameObject player = GameObject.Find("player(Clone)");
         playerpos = player.GetComponent<Transform>().position;
     }
     void launch1()
