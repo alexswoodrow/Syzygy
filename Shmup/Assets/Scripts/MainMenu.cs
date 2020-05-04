@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
         lives.lifenum = 3;
+        Score.score = 0;
     }
 
     public void QuitGame()

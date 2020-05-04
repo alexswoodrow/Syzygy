@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playership: {fileID: 4121565856372307426, guid: d119518babd16f342b09f4448e95f2be,
     type: 3}
+  diediedie: {fileID: 8300000, guid: b04c9a211d86b804a997019fa66c2e9b, type: 3}
 --- !u!114 &9074431150785740930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,15 +34,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6581962610807797646, guid: 333a712c80ba24445a3ea8815bc4eefe,
+    - target: {fileID: 119084901187847665, guid: 333a712c80ba24445a3ea8815bc4eefe,
         type: 3}
-      propertyPath: m_Name
-      value: enemybullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 6581962610807797646, guid: 333a712c80ba24445a3ea8815bc4eefe,
-        type: 3}
-      propertyPath: m_TagString
-      value: bullet
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4326825431034678944, guid: 333a712c80ba24445a3ea8815bc4eefe,
         type: 3}
@@ -108,6 +104,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6581962610807797646, guid: 333a712c80ba24445a3ea8815bc4eefe,
+        type: 3}
+      propertyPath: m_Name
+      value: enemybullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6581962610807797646, guid: 333a712c80ba24445a3ea8815bc4eefe,
+        type: 3}
+      propertyPath: m_TagString
+      value: bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 8133526409368054584, guid: 333a712c80ba24445a3ea8815bc4eefe,
         type: 3}
       propertyPath: m_Color.r
@@ -122,11 +128,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.09549664
-      objectReference: {fileID: 0}
-    - target: {fileID: 119084901187847665, guid: 333a712c80ba24445a3ea8815bc4eefe,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7020255427342949358, guid: 333a712c80ba24445a3ea8815bc4eefe, type: 3}

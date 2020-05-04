@@ -280,6 +280,7 @@ MonoBehaviour:
   health: 50
   plusScore: 10
   other: {fileID: 2641693996902941036, guid: 8cd7f1ff830ae0549ace4ff25628e909, type: 3}
+  explo: {fileID: 6746718690498758100, guid: c8f26b5689d1e2d45b592fda9c987be0, type: 3}
 --- !u!114 &7500238631727158755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playership: {fileID: 4121565856372307426, guid: d119518babd16f342b09f4448e95f2be,
     type: 3}
+  diediedie: {fileID: 8300000, guid: b04c9a211d86b804a997019fa66c2e9b, type: 3}
 --- !u!82 &-6557247300309474791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -415,7 +417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6693485977849120809}
   m_LocalRotation: {x: 0.05950582, y: 0.79626864, z: -0.07604803, w: 0.59718674}
-  m_LocalPosition: {x: -1.109, y: 1.7950007, z: 1.225}
+  m_LocalPosition: {x: -1.109, y: 1.7950007, z: 1.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8833132675602392274}

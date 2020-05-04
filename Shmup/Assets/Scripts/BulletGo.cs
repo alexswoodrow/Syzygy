@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BulletGo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    AudioSource audio;
+    public AudioClip ding;
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         SpriteRenderer therenderer = GetComponent<SpriteRenderer>();
     }
     private void FixedUpdate()
@@ -37,7 +39,7 @@ public class BulletGo : MonoBehaviour
         if (other.gameObject.tag == "friend")
         {
             gameObject.tag = "betterbullet";
-         
+            audio.Play();
         }
        
     }

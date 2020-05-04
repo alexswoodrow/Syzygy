@@ -50,6 +50,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,6 +101,7 @@ MonoBehaviour:
   health: 20
   plusScore: 10
   other: {fileID: 2641693996902941036, guid: 8cd7f1ff830ae0549ace4ff25628e909, type: 3}
+  explo: {fileID: 6746718690498758100, guid: c8f26b5689d1e2d45b592fda9c987be0, type: 3}
 --- !u!114 &7085704436094878312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playership: {fileID: 4121565856372307426, guid: d119518babd16f342b09f4448e95f2be,
     type: 3}
+  diediedie: {fileID: 8300000, guid: b04c9a211d86b804a997019fa66c2e9b, type: 3}
 --- !u!50 &7176842766482706785
 Rigidbody2D:
   serializedVersion: 4

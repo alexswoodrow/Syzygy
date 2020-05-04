@@ -29,7 +29,7 @@ public class Destroy : MonoBehaviour
                 GameObject player = GameObject.Find("player");
                 Score.score += plusScore;
 
-                GameObject exploPrefab = Instantiate(explo, other.gameObject.transform);
+               // GameObject exploPrefab = Instantiate(explo, other.gameObject.transform);
                 Destroy(other.gameObject);
                 Destroy(gameObject);
             }
@@ -44,11 +44,11 @@ public class Destroy : MonoBehaviour
                 Destroy(gameObject);
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.tag != "bullet" || other.gameObject.tag != "betterbullet" || other.gameObject.tag != "friend") {
-                GameObject exploPrefab = Instantiate(explo, other.gameObject.transform);
+            //else if (other.gameObject.tag != "bullet" && other.gameObject.tag != "betterbullet" && other.gameObject.tag != "friend" && other.gameObject.tag != "goodBullet") {
+           //     GameObject exploPrefab = Instantiate(explo, other.gameObject.transform);
             }
         }
     }
 
 
-}
+

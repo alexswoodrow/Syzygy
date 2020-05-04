@@ -55,6 +55,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -139,6 +140,7 @@ MonoBehaviour:
   health: 30
   plusScore: 10
   other: {fileID: 2641693996902941036, guid: 8cd7f1ff830ae0549ace4ff25628e909, type: 3}
+  explo: {fileID: 6746718690498758100, guid: c8f26b5689d1e2d45b592fda9c987be0, type: 3}
 --- !u!114 &1615183950715913269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playership: {fileID: 4121565856372307426, guid: d119518babd16f342b09f4448e95f2be,
     type: 3}
+  diediedie: {fileID: 8300000, guid: b04c9a211d86b804a997019fa66c2e9b, type: 3}
 --- !u!114 &4821036495342872255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,8 +361,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672930953814121183}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 4
+  m_Shape: 0
   m_Color: {r: 0.53817797, g: 0.13652545, b: 0.5566038, a: 1}
   m_Intensity: 26.88
   m_Range: 10
@@ -449,8 +453,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3469358039752720576}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 0
+  m_Shape: 0
   m_Color: {r: 1, g: 0.6792453, b: 0.8131656, a: 0.58431375}
   m_Intensity: 3.13
   m_Range: 3.17

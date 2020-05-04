@@ -77,6 +77,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -173,6 +174,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -252,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 0}
+  LifeText: {fileID: 0}
 --- !u!60 &5089502842207246823
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -501,6 +504,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -541,6 +545,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897017607754926530, guid: 3897473f9df1fd04a850215a4230dafb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4121565856372307426}
+    - target: {fileID: 2842724600495841360, guid: 3897473f9df1fd04a850215a4230dafb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842724600495841360, guid: 3897473f9df1fd04a850215a4230dafb,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4702492510523018114, guid: 3897473f9df1fd04a850215a4230dafb,
         type: 3}
@@ -597,21 +616,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1897017607754926530, guid: 3897473f9df1fd04a850215a4230dafb,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 4121565856372307426}
-    - target: {fileID: 2842724600495841360, guid: 3897473f9df1fd04a850215a4230dafb,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2842724600495841360, guid: 3897473f9df1fd04a850215a4230dafb,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6523530161397542552, guid: 3897473f9df1fd04a850215a4230dafb,
         type: 3}
       propertyPath: m_Constraints
@@ -638,11 +642,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 446677063485763686}
     m_Modifications:
-    - target: {fileID: 8843914191198995682, guid: 36c3a34b7983eb4499e3580a3359b84a,
-        type: 3}
-      propertyPath: m_Name
-      value: Directional Light
-      objectReference: {fileID: 0}
     - target: {fileID: 2379260860586471620, guid: 36c3a34b7983eb4499e3580a3359b84a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -698,6 +697,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8843914191198995682, guid: 36c3a34b7983eb4499e3580a3359b84a,
+        type: 3}
+      propertyPath: m_Name
+      value: Directional Light
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c3a34b7983eb4499e3580a3359b84a, type: 3}
 --- !u!4 &8682281668881460995 stripped
@@ -713,11 +717,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6549212590892112283}
     m_Modifications:
-    - target: {fileID: 2957564422713448714, guid: e82039138a97ff34798034998b7d6949,
-        type: 3}
-      propertyPath: m_Name
-      value: LittleFriend-diamond
-      objectReference: {fileID: 0}
     - target: {fileID: 2256366037689559833, guid: e82039138a97ff34798034998b7d6949,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -782,6 +781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.47663325
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957564422713448714, guid: e82039138a97ff34798034998b7d6949,
+        type: 3}
+      propertyPath: m_Name
+      value: LittleFriend-diamond
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82039138a97ff34798034998b7d6949, type: 3}

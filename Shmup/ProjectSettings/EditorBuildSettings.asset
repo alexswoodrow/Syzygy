@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 2894b66c38e43514490febba7b6413fd
   - enabled: 1
-    path: Assets/Scenes/PickAbility1.unity
-    guid: ed8540b0da5d9f74592084a1b1697991
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -27,14 +24,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: 73df597abcfc53e42b63aaf3cd8b8593
   - enabled: 1
-    path: Assets/Scenes/Level7.unity
+    path: Assets/Scenes/Level4.unity
     guid: 5f15f0a01e2a8c043b94401f57563458
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 41c445ba17b004b4fbbf9e06c1797f2b
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: 08c692a9321ada942bf8bad1da0e7f08
   - enabled: 1
     path: Assets/Scenes/win.unity
     guid: aacd590d20c598e4eabf743e7a3e16f3
+  - enabled: 1
+    path: Assets/Scenes/PickAbility1.unity
+    guid: ed8540b0da5d9f74592084a1b1697991
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 1613f889f53497749b36bebabd337f3c

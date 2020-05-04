@@ -7,16 +7,20 @@ public class Score : MonoBehaviour
 {
     public static int score = 0;
     public Text ScoreText;
+    public Text LifeText;
+    private int mylife;
     // Start is called before the first frame update
     void Start()
     {
         ScoreText = GameObject.Find("TheScore").GetComponent<Text>();
-       
+        LifeText = GameObject.Find("TheLives").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
         ScoreText.text = "Score: " + score;
+        mylife = lives.lifenum;
+        LifeText.text = "Lives: " + mylife;
     }
 }
